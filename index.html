@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+
+<div id="registration-form">
+    <!-- Registrační policka -->
+    <input type="text" id="emailInput" placeholder="Email">
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button id="nextButton">Next</button>
+</div>
+
+<div id="insured-form" style="display: none;">
+    <!-- Insured formular -->
+    <input type="text" id="firstNameInput" placeholder="First Name">
+    <input type="text" id="lastNameInput" placeholder="Last Name">
+    <input type="text" id="streetInput" placeholder="Street">
+    <input type="text" id="cityInput" placeholder="City">
+    <input type="text" id="phoneInput" placeholder="Phone">
+    <input type="text" id="insuranceTypeInput" placeholder="Insurance Type">
+    <button id="registerButton">Register</button>
+</div>
+
+<div id="registration-success" style="display: none;">
+    <p>Registration successful!</p>
+    <p>Email: <span id="displayRegisteredEmail"></span></p>
+    <p>First Name: <span id="displayFirstName"></span></p>
+    <p>Last Name: <span id="displayLastName"></span></p>
+    <p>Street: <span id="displayStreet"></span></p>
+    <p>City: <span id="displayCity"></span></p>
+    <p>Phone: <span id="displayPhone"></span></p>
+    <p>Insurance Type: <span id="displayInsuranceType"></span></p>
+</div>
+
+<script src="frontend.js"></script>
+</body>
+</html>
